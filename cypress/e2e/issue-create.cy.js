@@ -102,16 +102,6 @@ describe('Issue create', () => {
       
       cy.get('button[type="submit"]').click();
     });
-   
-    
-    
-    
-    
-    
-    
-    
-    
-  
 
   it('Should validate title is required field if missing', () => {
     // System finds modal for creating issue and does next steps inside of it
@@ -124,3 +114,9 @@ describe('Issue create', () => {
     });
   });
 });
+module.exports = {
+  e2e: {
+    // Adjust the pattern to match your spec files
+    specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+  },
+};
